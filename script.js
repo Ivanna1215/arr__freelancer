@@ -153,15 +153,130 @@
 // console.log (arrOne.indexOf('Wednesday',3));
 // console.log (arrOne.includes ('Sunday'));
 
-// finf i findIndex
+// find i findIndex
 
-let arr = [
-    {name: 'Ivanna', age: 31},
-    {name:'Anna',age:9},
-    {name: 'Max' ,age:'I will not say'}
-];
+// let arr = [
+//     {name: 'Ivanna', age: 31},
+//     {name:'Anna',age:9},
+//     {name: 'Max' ,age:'I will not say'}
+// ];
 // let resultOne = arr.find(function(item,index,array){
 //     return item.age ===31;
 // }) 
-let resultOne = arr.find (item=>item.age === 31);
-console.log (resultOne);
+// let resultOne = arr.find (item=>item.age === 31);
+// console.log (resultOne);
+
+// let arr = [
+//     {name: 'Ivanna', age: 31},
+//     {name:'Anna',age:9},
+//     {name: 'Max' ,age:'I will not say'}
+// ];
+
+// let resultOne = arr.filter(function(item,index,array){
+//     return item.age >=9;
+// }) 
+// console.log (resultOne);
+
+// let arrOne = ['Monday','Tuesday','Wednesday','Thursday','Friday'];
+// console.log (arrOne.sort());
+
+// let arrTwo = [8,22,1];
+// console.log (arrTwo.sort());
+// console.log (arrTwo.sort((a,b) =>a-b));
+
+// Сортування масивів
+// reverse міняє порядок в масиві на зворотній
+
+// let arrOne = ['Monday','Tuesday','Wednesday'];
+// console.log (arrOne.reverse());
+
+// Метод arr.map є одним з найкорисніших і найчастіше використовуваних .
+// Він викликає функцію кожного елементу масиву і повертає  масив результатів виконання цієї функції
+// Синтаксис
+// let result = arr.map(function(item,index,array)) {
+    // повертає нове значення замість елемента
+// });
+
+// let arr = ['Monday', 'Tuesday','Wednesday',];
+// let result = arr.map (function(item,index,array) {
+    // return item[0];
+    // return index;
+//     return array;
+// })
+// console.log (arr);
+// console.log (result);
+
+// Методи split i join
+
+// Метод split перетворює строку в масив по заданому разделителю
+
+// Синтаксис str.split (delim)
+
+// let str = 'Monday,Tuesday,Wednesday';
+
+// let arr = str.split (',');
+// console.log (arr);
+
+// let arrTwo = str.split (',',2);
+// console.log (arrTwo);
+
+// Метод join оперетворює масив у строку із по заданим розділовим знаком
+
+// let arr = ['Monday','Tuesday','Wednesday'];
+// let srt = arr.join('/');
+// console.log (srt);
+
+// let arrTwo = ['Monday','Tuesday','Wednesday'];
+// console.log (String(arrTwo));
+
+// Перевірка Array.isArray()
+
+// let obj = {};
+// let arr = [];
+
+// console.log (typeof obj);
+// console.log (typeof arr);
+
+// if (Array.isArray (obj)) {
+//     console.log ('It is array')
+// } else {
+//     console.log ('Error')
+// }
+
+// Перебір елементів
+
+// let arr = ['Monday','Tuesday','Wednesday'];
+// console.log (arr.length);
+
+// цикл for
+
+// for (let i = 0; i<arr.length; i++) {
+//     console.log (arr[i]);
+// }
+
+// let arr = ['Monday','Tuesday','Wednesday'];
+// for (let arrItem of arr) {
+//     console.log (arrItem);
+// }
+
+// for Each
+
+// let arr = ['Monday','Tuesday','Wednesday'];
+// arr.forEach (function (item,index,array) {
+//     console.log (`${item} is on ${index} positions in ${array}`)
+// })
+
+// arrow function
+// arr.forEach ((item,index,array)=>{
+//     console.log (`${item} is on ${index} positions in ${array}`)
+// })
+
+let arr = ['Monday','Tuesday','Wednesday'];
+arr.forEach (show);
+
+function show(item) {
+    console.log(item);
+}
+
+
+
