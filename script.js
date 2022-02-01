@@ -259,7 +259,7 @@
 //     console.log (arrItem);
 // }
 
-// for Each
+// for Each 
 
 // let arr = ['Monday','Tuesday','Wednesday'];
 // arr.forEach (function (item,index,array) {
@@ -271,12 +271,101 @@
 //     console.log (`${item} is on ${index} positions in ${array}`)
 // })
 
-let arr = ['Monday','Tuesday','Wednesday'];
-arr.forEach (show);
+// let arr = ['Monday','Tuesday','Wednesday'];
+// arr.forEach (show);
 
-function show(item) {
-    console.log(item);
-}
+// function show(item) {
+//     console.log(item);
+// }
+
+// Методи reduce/reduceRight
+
+// let arrOne = [1,2,3,4];
+// let reduceValueOne = arrOne.reduce (function(previousValue,item,index,array){
+//     return item + previousValue;  
+// },0);
+// console.log (reduceValueOne);
+
+// Step 1
+// previousValue = 0
+// item = 1
+// їх сума = 1
+
+// Step 2
+// previousValue = 1
+// item = 2
+// їх сума = 3
+
+// Step 3
+// previousValue = 3
+// item = 3
+// їх сума = 6
+
+// Step 4
+// previousValue = 6
+// item = 4
+// їх сума = 10
 
 
+// let arrTwo = ['Tuesday','Wednesday','Thursday',];
 
+// Якщо не вказати початкове значення (perviousValue=Thuesday)
+// А робота методу почнеться з другого елемента (item=Wednesday)
+
+// let reduceValueTwo = arrTwo.reduce (function(previousValue,item,index,array){
+//     return `${item},${previousValue}`;
+// });
+// console.log (`day: ${reduceValueTwo}`);
+
+// Задача №1.
+// Какое число (длинну) мы получим?
+// let arr = ['Ваня', 'Иштван', 'Оля',];
+// let newArr = arr;
+// newArr.push('Петя');
+// console.log(arr.length);
+// console.log (arr);
+
+// Задача №2.
+/*
+Создайте массив users с элементами "Ваня" и "Иштван".
+Добавьте "Оля" в конец.
+Замените значение в "Иштван" на "Петя".
+Ваш код для поиска значения должен
+работать для массивов с любой длиной.
+Удалите первый элемент массива и покажите его.
+Вставьте "Маша" и "Паша" в начало массива.
+*/
+
+// let arrOne = ['Tuesday','Thursday'];
+// console.log (arrOne);
+// arrOne.push ('Saturday');
+// console.log (arrOne);
+// arrOne[2]='Friday';
+// console.log (arrOne);
+// arrOne[1]='Monday';
+// console.log (arrOne);
+// arrOne.shift();
+// console.log (arrOne);
+// console.log (arrOne.shift());
+// arrOne.unshift('Saturday','Sandy');
+// console.log (arrOne);
+
+// Задача №3.
+// Удалить элемент 'Friday' и возвратить его в переменную
+// let arr = ['Thursday', 'Friday', 'Saturday',];
+// let removed = arr.splice(1,1);
+// console.log (removed);
+// console.log (arr.slice(0,1));
+// let arrTwo = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sandy'];
+// console.log (arrTwo);
+// let weekend = arrTwo.splice(-2,2)
+// console.log (weekend);
+// let day = arrTwo.splice(0,2);
+// console.log (day);
+
+// Задача №4.
+//Сделать из строки массив
+let str = 'Thursday,Friday,Sanday';
+let arr = str.split (',');
+console.log (arr);
+console.log (str);
