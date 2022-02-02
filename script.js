@@ -365,7 +365,17 @@
 
 // Задача №4.
 //Сделать из строки массив
-let str = 'Thursday,Friday,Sanday';
-let arr = str.split (',');
-console.log (arr);
-console.log (str);
+// let str = 'Thursday,Friday,Sanday';
+// let arr = str.split (',');
+// console.log (arr);
+// console.log (str);
+
+// Задача №5.
+// Чему равен previousValue в начале работы метода?
+let arr = [9, 2, 8,];
+let reduceValue = arr.reduce(function (previousValue, item, index, array) {
+	console.log(previousValue);
+});
+// 9
+// Якщо не вказати початкове значення (perviousValue=9)
+// А робота методу почнеться з другого елемента (item=2)
